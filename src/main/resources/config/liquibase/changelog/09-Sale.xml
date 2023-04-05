@@ -9,10 +9,10 @@
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>           
             </column>
-            <column name="car" type="varchar(50)">
+            <column name="car" type="bigint">
                 <constraints nullable="false"/>
             </column>
-            <column name="customer" type="varchar(50)">
+            <column name="customer" type="bigint">
                 <constraints nullable="false"/>
             </column>
             <column name="created" type="datetime">
@@ -29,21 +29,17 @@
             <constraints nullable="true"/>
             </column>
         </addColumn>
-    </changeSet>
-     <changeSet author="liquibase-docs" id="addForeignKeyConstraint-ex">
         <addForeignKeyConstraint
             baseTableName="sale"
             baseColumnNames="car" 
             constraintName="fk_sale_car"
             referencedTableName="car" 
-            referencedColumnNames="id"/>
-    </changeSet>
-    <changeSet author="liquibase-docs" id="addForeignKeyConstraint-">
+            referencedColumnNames="id" onDelete="NO ACTION" onUpdate="NO ACTION" />
         <addForeignKeyConstraint
             baseTableName="sale"
             baseColumnNames="customer" 
             constraintName="fk_sale_customer"
             referencedTableName="customer" 
-            referencedColumnNames="id"/>
+            referencedColumnNames="id" onDelete="NO ACTION" onUpdate="NO ACTION" />
     </changeSet>
 </databaseChangeLog>

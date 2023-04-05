@@ -16,22 +16,17 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-    </changeSet>
-
-    <changeSet author="liquibase-docs" id="addForeignKeyConstraint-exemple">
         <addForeignKeyConstraint
             baseTableName="carEngine"
             baseColumnNames="car" 
             constraintName="fk_carEngine_car"
             referencedTableName="car" 
-            referencedColumnNames="id"/>
-    </changeSet>
-    <changeSet author="liquibase-docs" id="addForeignKeyConstraint">
+            referencedColumnNames="id" onDelete="NO ACTION" onUpdate="NO ACTION" />
         <addForeignKeyConstraint
             baseTableName="carEngine"
             baseColumnNames="engine" 
             constraintName="fk_carEngine_engine"
             referencedTableName="engine" 
-            referencedColumnNames="id"/>
+            referencedColumnNames="id" onDelete="NO ACTION" onUpdate="NO ACTION"/>
     </changeSet>
 </databaseChangeLog>

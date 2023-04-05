@@ -13,15 +13,16 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
     <property name="datetimeType" value="datetime(6)" dbms="mysql, mariadb"/>
     <property name="datetimeType" value="datetime" dbms="oracle, mssql, postgresql, h2"/>
-<include file="changelog/01-Brand.xml" relativeToChangelogFile="true"/>
-<include file="changelog/02-Model.xml" relativeToChangelogFile="true"/>
-<include file="changelog/03-Car.xml" relativeToChangelogFile="true"/>
-<include file="changelog/04-Feature.xml" relativeToChangelogFile="true"/>
-<include file="changelog/05-CarFeature.xml" relativeToChangelogFile="true"/>
-<include file="changelog/06-Engine.xml" relativeToChangelogFile="true"/>
-<include file="changelog/07-CarEngine.xml" relativeToChangelogFile="true"/>
-<include file="changelog/07-Customer.xml" relativeToChangelogFile="true"/>
-<include file="changelog/07-Sale.xml" relativeToChangelogFile="true"/>
+    
+    <include file="changelog/01-Brand.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/02-Model.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/03-Car.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/04-Feature.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/05-CarFeature.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/06-Engine.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/07-CarEngine.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/08-Customer.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/09-Sale.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
 
 
